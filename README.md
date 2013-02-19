@@ -28,4 +28,7 @@ Current Version: 1.0
 ## How-to Install
 - Clone the entire repository and upload to any web directory.
 - Send web address to recipient.
-- Profit
+- Profit!
+
+## Bugs
+- Input validation for an empty user name is not properly caught.  Using if (name == "") does not work.
