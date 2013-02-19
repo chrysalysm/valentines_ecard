@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+a {
+	color:#CCCCCC;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#000000;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#CCCCCC;
+}
+
+body {
+	background-color: #655941;
+}
+
+.style {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+	alignment-adjust:central;
+	alignment-baseline:central;
+}
+#canvas-container {
+	width: 100%;
+	text-align:center;
+	padding-top: 2cm;
+}
+
+button {
+	border: 0px;
+	width: 32px;
+	height: 32px;
+	background: url(rotate.png) top center no-repeat;
+}
+
+button:hover {
+	border: 0;
+	background: url(rotate_hover.png) no-repeat;
+}
