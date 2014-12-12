@@ -1,8 +1,8 @@
 /*
-Valentines e-Card Script v1.0
-Version 1.0
-Last Updated: February 14th, 2013
-Script: milkmandan - inTechnicolor.net
+Valentines e-Card Script
+Version: 1.1
+Last Updated: December 11th, 2014
+Script: milkmandan - http://intechnicolor.net
 Special Thanks to Clone.Manga - http://manga.clone-army.org/
 */
 
@@ -13,9 +13,9 @@ window.onload = function() {
 	imgArray[1] = "valentines_friend.jpg";
 	imgArray[2] = "valentines_hurtme.jpg";
 	imgArray[3] = "valentines_talktome.jpg";
-	window.name = prompt("Please enter your name:");
-	// I am not that much of an asshole to force another prompt
-	if (name == "null") {
+	window.name = prompt("Please enter your name:", "Guybrush Threepwood");
+	// input validation
+	if (name === null || name == "null" || name == "") {
 		name = "idiot that didn't enter a name";
 	}
 	window.canvas = document.getElementById("vCanvas");
@@ -35,7 +35,7 @@ window.onload = function() {
 		context.fillStyle = "#7B4D1B";
 		context.fillText(name, x, 100);
 		context.font = "15pt Tahoma";
-		// Altruism, because I am not a selfish shit
+		// Altruism, because I am not selfish
 		context.fillText("Yours Truly", 230, 575);
 	};
 	image.src = imgArray[randNum];
