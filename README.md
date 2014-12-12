@@ -29,6 +29,3 @@ Current Version: 1.0
 - Clone the entire repository and upload to any web directory.
 - Send web address to recipient.
 - Profit!
-
-## Bugs
-- Input validation for an empty user name is not properly caught.  Using if (name == "") does not work.
