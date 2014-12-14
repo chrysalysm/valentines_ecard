@@ -6,7 +6,7 @@ Script: milkmandan - http://intechnicolor.net
 Special Thanks to Clone.Manga - http://manga.clone-army.org/
 */
 
-// Javascript 4 Kids
+// Javascript
 window.onload = function() {
 	window.imgArray = new Array();
 	imgArray[0] = "valentines_donthateme.jpg";
@@ -16,7 +16,7 @@ window.onload = function() {
 	window.name = prompt("Please enter your name:", "Guybrush Threepwood");
 	// input validation
 	if (name === null || name == "null" || name == "") {
-		name = "idiot that didn't enter a name";
+		name = "Guybrush Threepwood";
 	}
 	window.canvas = document.getElementById("vCanvas");
 	window.context = canvas.getContext("2d");
@@ -26,7 +26,7 @@ window.onload = function() {
 	var image = new Image();
 	image.onload = function() {
 		context.drawImage(image, 0, 0);
-		if (name == "idiot that didn't enter a name") {
+		if (name == "Guybrush Threepwood") {
 			context.font = "16pt Tahoma";
 		} else {
 			context.font = "21pt Tahoma";
@@ -41,6 +41,7 @@ window.onload = function() {
 	image.src = imgArray[randNum];
 };
 
+// Button onClick function
 function imgRotation() {
 	var newImage = new Image();
 	newrandNum++;
@@ -49,7 +50,7 @@ function imgRotation() {
 	}
 	newImage.onload = function() {
 		context.drawImage(newImage, 0, 0);
-		if (name == "idiot that didn't enter a name") {
+		if (name == "Guybrush Threepwood") {
 			context.font = "16pt Tahoma";
 		} else {
 			context.font = "21pt Tahoma";
